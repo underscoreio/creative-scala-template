@@ -16,6 +16,6 @@ cleanupCommands in console := """
     """.trim.stripMargin
 
 libraryDependencies ++= Seq(
-  "underscoreio" %% "doodle" % "0.6.1",
-  "org.typelevel" %% "cats" % "0.4.1"
+  "underscoreio" %% "doodle" % "0.6.3",
+  "org.typelevel" %% "cats" % "0.6.0"
 )
