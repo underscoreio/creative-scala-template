@@ -19,3 +19,6 @@ libraryDependencies ++= Seq(
   "underscoreio" %% "doodle" % "0.8.3",
   "org.typelevel" %% "cats-core" % "1.1.0"
 )
+
+Compile / fork := true
+Test / fork := true
