@@ -1,21 +1,16 @@
-scalaVersion := "2.12.7"
+scalaVersion := "2.12.8"
 
-resolvers += Resolver.bintrayRepo("underscoreio", "training")
+// resolvers += Resolver.bintrayRepo("underscoreio", "training")
 
 initialCommands in console := """
       |import doodle.core._
-      |import doodle.core.Image._
-      |import doodle.syntax._
-      |import doodle.jvm.Java2DFrame._
-      |import doodle.backend.StandardInterpreter._
-      |import doodle.examples._
-    """.trim.stripMargin
-
-cleanupCommands in console := """
-      |doodle.jvm.quit()
+      |import doodle.image._
+      |import doodle.image.syntax._
+      |import doodle.image.syntax.core._
+      |import doodle.java2d._
     """.trim.stripMargin
 
 libraryDependencies ++= Seq(
-  "underscoreio" %% "doodle" % "0.8.3",
-  "org.typelevel" %% "cats-core" % "1.1.0"
+  "org.creativescala" %% "doodle" % "0.9.6",
+  "org.creativescala" %% "doodle-reactor" % "0.9.6"
 )
