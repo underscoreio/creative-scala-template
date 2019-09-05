@@ -16,3 +16,7 @@ project/plugins/project/
 .scala_dependencies
 .worksheet
 .idea
+
+.metals
+.sbt-hydra-history
+repository/
