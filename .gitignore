@@ -17,6 +17,10 @@ project/plugins/project/
 .worksheet
 .idea
 
+# metals specific
 .metals
+.bloop
+
+# other
 .sbt-hydra-history
-repository/
+repository
