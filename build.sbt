@@ -14,3 +14,6 @@ libraryDependencies ++= Seq(
   "org.creativescala" %% "doodle" % "0.9.6",
   "org.creativescala" %% "doodle-reactor" % "0.9.6"
 )
+
+Compile / fork := true
+Test / fork := true
